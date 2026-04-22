@@ -1,8 +1,9 @@
-import heroTeam from "./assets/photos/hero-team.jpg";
+import heroTeam from "./assets/photos/hero.png";
 import heroCity from "./assets/photos/hero-city.jpg";
-import aboutWork from "./assets/photos/about-work.jpg";
+import aboutWork from "./assets/photos/about-work.png";
 import projectDashboard from "./assets/photos/project-dashboard.jpg";
 import projectLearning from "./assets/photos/project-learning.jpg";
+import prime from "./assets/photos/prime.png";
 
 const SectionHeading = ({ eyebrow, title, subtitle }) => {
   return (
@@ -435,7 +436,14 @@ const App = () => {
                 </div>
               </article>
 
-              <article className="rounded-3xl border border-white/10 bg-white/5 p-7">
+              <article className="rounded-3xl border border-white/10 bg-white/5">
+              <img
+                  src={prime}
+                  alt="Prime Connect"
+                  className="h-56 w-full object-cover rounded-t-3xl"
+                  loading="lazy"
+                />
+                <div className="p-7">
                 <h3 className="text-xl font-semibold text-white">
                   Prime Connect (Internship)
                 </h3>
@@ -481,6 +489,7 @@ const App = () => {
                       ))}
                     </ul>
                   </div>
+                </div>
                 </div>
               </article>
 
@@ -608,6 +617,17 @@ const App = () => {
                 Review projects
               </a>
             </div>
+            <p className="text-sm text-white/70 mt-4">+251-967-028-751</p>
+            <p className="text-sm text-white/70 mt-2">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=mirth132456@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              mirth132456@gmail.com
+            </a>
+          </p>
           </div>
         </div>
       </section>
